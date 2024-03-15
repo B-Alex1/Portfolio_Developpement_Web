@@ -1,0 +1,94 @@
+/*Light*/
+body.light{
+    background-color: white;
+}
+
+header.light{
+    background: conic-gradient(at 152px 89px, skyblue, lightblue, pink);
+}
+    header.signature.dark{
+        background-image: url("../images/signature_noir.png");
+    }
+    header .light{
+        color: black;
+    }
+        header nav ul li .light:hover{
+            background-color: white;
+        }
+
+#presentation.light{
+    background-image: url("../images/lightcoastShrunk.jpg");
+    background-size:cover;
+}
+    #presentation .light{
+        color: white;
+    }
+    #presentation .defaultfond.light{
+        color: black;
+        background: linear-gradient(to left,transparent,rgba(255,255,255,0.7),transparent);
+    }
+        #presentation button.light{
+            color: black;
+            background-color: lightblue;
+            border-color: peachpuff;
+        }
+        #presentation #darklight.light{
+            background-color: white;
+            box-shadow: 0 5px black;
+            
+        }
+            #presentation #darklight.light:hover{
+                border: solid 2px black;
+            }
+            #presentation #darklight.light:active{
+                background-color: black;
+                color: white;
+                box-shadow: 0 3px white;
+            }
+
+#titre.light{
+    background-image: url(../images/titrepiclight.png);
+    background-size: cover;
+    background-position: 50%;
+}
+
+/*Boutons collapse*/
+#parcourspro.light{
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+    .active, #parcourspro.light:hover{
+        border-color: black;
+    }
+
+#parcourssco.light{
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+    #parcourssco.light:hover{
+        border-color: black;
+    }
+
+#competences.light{
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+    #competences.light:hover{
+        border-color: black;
+    }
+
+    .content p.dark{
+        color: black;
+    }
+    .content h3.dark{
+        color: black;
+    }
+    
+    .content div{
+        border: solid 2px black;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .content img{
+        margin: 5px;
+    }

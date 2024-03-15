@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alexander Bakalov</title>
+		<meta charset="utf-8"/>
+        <link rel="icon" type="image/x-icon" href="images/AB_fav.jpg">
+        <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/styledark.css">
+        <link rel="stylesheet" type="text/css" href="styles/stylelight.css">
+        <link rel="stylesheet" type="text/css" href="styles/stylesize.css">
+        <script src="script/code.js"></script>
+        
+	</head>
+
+    <body class="dark">
+        <div class="container-fluid nopadding pagewrapper"> <!--Contains whole page-->
+            <header class="container-fluid dark">
+                <div class="row nomargin">
+                    <div class="col-2 nopadding" id="signature">
+                        <a href="index.html" ><img class="dark" src="images/signature_bleu.png"></a>
+                    </div>
+                    <nav class="col-10">
+                        <ul class="nopadding nomargin">
+                            <li class="active" id="accueil"><a class="dark d-none d-md-block col-md-3" href="index.html" title="Accueil">Accueil</a></li>
+                            <li id="parcours"><button id="bp" class="dark d-none d-md-block col-md-3" onclick="sedeplacer('parcourspro')">Mon parcours</button></li>
+                            <li id="reseaux"><a class="dark d-none d-md-block col-md-3" href="https://fr.linkedin.com/in/alexander-bakalov-055275232" title="Mon LinkedIn" target="_blank">Réseaux</a></li>
+                            <li id="mdscreenhd" class="row">
+                                <button id="burger" class="nopadding dark col-1 d-md-none">
+                                    <div id="bar"></div>
+                                    <div id="bar"></div>
+                                    <div id="bar"></div>
+                                </button>
+                                <div class="col-4 cl-md-12"></div> <!--Adds space between burger and select-->
+                                <select class="dark col-4 col-md-3" name="languages" id="language"> 
+                                    <option value="francais">fr</option> 
+                                    <option value="english">en</option> 
+                                </select>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        
+            <div class="container-fluid nopadding" id="sections"><!--Puts sections in same div-->
+                <div class="row">
+                    <section class="col-12 dark" id="titre">
+                        <h1><img class="dark" src="images/signature_bleu.png"></h1>
+                        <button id="decouvrez" onclick="sedeplacer('video')"><p>Découvrez ma vision du web</br>v</p></button>
+                    </section>
+                    <section class="col-12" id="video">
+                        <img id="gif" src="images/sunsetCity.gif" onclick="pauseGIF()">
+                        <span id="giftext">FLUX</span>
+                    </section>
+                    <section class="col-12 nopadding dark" id="presentation">
+                        <h1 class="dark defaultfond">Personalisation</h1>
+                        <button id="darklight" class="dark" onclick="dark_light()">Dark / Light</button></br></br>
+                        <button id="randomize" class="dark" onclick="changerParagraphes()">Style de text aléatoire</button></br>
+                        <button id="reinitialise" class="dark" onclick="reinitialiser()">Réinitialiser</button>
+                        <p class="dark defaultfond">Ravie de vous voir sur mon site!</p>
+                    </section>
+                </div>
+                
+                <!--Parcours pro-->
+                <button type="button" onclick="collapse('parcoursprocontent')" class="collapsible col-12 nopadding dark" id="parcourspro">
+                    <h2>Mon parcours professionel</h2>
+                </button>
+                <div class="content col-12" id="parcoursprocontent">
+                    <div class="dark col-12">
+                        <h3 class="dark">Fevrier 2021 - Aout 2022</h3>
+                        <img class="col-12 col-sm-2" src="images/pro/egdo.png" height="100px">
+                        <p class="dark col-12 col-sm-10">Service civique au sein du club de football "Enfants de la Goutte d'Or"</p>
+                    </div>
+                    <div class="dark col-12">
+                        <h3 class="dark">Aout 2022 - Présent</h3>
+                        <img src="images/pro/flashd.png" height="150px">
+                        <p class="dark">CTO de la start-up Flash Development</p>
+                    </div>
+                </div>
+
+                <!--Parcours sco-->
+                <button type="button" onclick="collapse('parcoursscocontent')" class="collapsible col-12 nopadding dark" id="parcourssco">
+                    <h2>Mon parcours scolaire</h2>
+                </button>
+                <div class="content" id="parcoursscocontent">
+                    <div class="dark">
+                        <h3 class="dark">Parcours scolaire bilingue</h3>
+                        <img class="col-12 col-sm-3" src="images/scolaire/camille.jpg" height="100px">
+                        <p class="dark">College/Lycee Camille See</p>
+                        <p class="dark col-12 col-sm-10">Obtention du BAC OIB avec mention</p>
+                    </div>
+                    <div class="dark">
+                        <h3 class="dark">Sorbonne Universite</h3>
+                        <img class="col-12 col-sm-3" src="images/scolaire/SU.png" height="100px">
+                        <p class="dark">College/Lycee Camille See</p>
+                        <p class="dark col-12 col-sm-10">Obtention du BAC OIB avec mention</p>
+                    </div>
+                </div>
+
+                <!--Competences-->
+                <button type="button" onclick="collapse('competencescontent')" class="collapsible col-12 nopadding dark" id="competences">
+                    <h2>Mes competences</h2>
+                </button>
+                <div class="content" id="competencescontent">
+                    <img src="images/competences/c.png" height="100px">
+                    <img src="images/competences/css.png" height="100px"></br>
+                    <img src="images/competences/github.png" height="100px">
+                    <img src="images/competences/html5.png" height="100px"></br>
+                    <img src="images/competences/java.png" height="100px">
+                    <img src="images/competences/javascript.png" height="100px"></br>
+                    <img src="images/competences/Ocaml.png" height="100px">
+                    <img src="images/competences/python.png" height="100px"></br>
+                </div>
+            </div>
+            <footer class="row nomargin">
+                <span>Si mon profil vous intéresse, n'hésitez pas à me <a href="mailto:bakalov.alexander@gmail.com">contacter!</a>
+                </span>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+/*Dark*/
+body.dark{
+    background-color: rgb(35, 35, 35);
+}
+h1{
+    text-align: center;
+    color: white;
+}
+    h2{
+        text-align: center;
+        color: white;
+    }
+        h3{
+            text-align: center;
+            color: white;
+        }
+
+header.dark{
+    background-color: transparent;
+}
+    header.dark.scrolled{
+        background-color: rgb(30, 30, 30);
+    }
+    header.signature.dark{
+        background-image: url("../images/signature_bleu.png");
+    }
+    header #bar1,#bar2,#bar3{
+        background-color: white;
+        height: 33%;
+    }
+    header .dark{
+        color: white;
+    }
+        header nav ul li .dark:hover{
+            color: rgb(0, 140, 255);
+        }
+
+#presentation.dark{
+    background-image: url("../images/coastShrunk.jpg");
+    background-size:cover;
+}
+    #presentation .dark{
+        color: white;
+    }
+    #presentation .defaultfond.dark{
+        color: white;
+    }
+        #presentation button.dark{
+            color: white;
+            background-color: #7e3be6;
+            border-color: peru;
+        }
+            #presentation button.dark:hover{
+                color: white;
+                background-color: #6e20e4;
+                border-color: peru;
+            }
+        #presentation #darklight.dark{
+            background-color: black;
+            box-shadow: 0 5px white;
+            
+        }
+            #presentation #darklight.dark:hover{
+                border: solid 2px white;
+            }
+            #presentation #darklight.dark:active{
+                background-color: white;
+                color: black;
+                box-shadow: 0 3px black;
+            }
+
+#titre.dark{
+    background-image: url(../images/titrepic.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+    #decouvrez{
+        color: lightgrey;
+    }
+    #decouvrez:hover{
+        color: white;
+    }
+
+/*Boutons collapse*/
+#parcourspro.dark{
+    background-color: rgb(102, 102, 102);
+    color: white;
+}
+    .active, #parcourspro.dark:hover{
+        border-color: white;
+    }
+
+#parcourssco.dark{
+    background-color: rgb(102, 102, 102);
+    color: white;
+}
+    #parcourssco.dark:hover{
+        border-color: white;
+    }
+
+#competences.dark{
+    background-color: rgb(102, 102, 102);
+    color: white;
+}
+    #competences.dark:hover{
+        border-color: white;
+    }
+
+.content p.dark{
+    color: white;
+}
+.content h3.dark{
+    color: white;
+}
+
+.content div{
+    border: solid 2px white;
+    border-radius: 10px;
+    margin: 5px;
+}
+.content img{
+    margin: 5px;
+}
